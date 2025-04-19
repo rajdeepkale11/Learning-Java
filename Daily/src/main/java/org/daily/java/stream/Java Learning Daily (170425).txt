@@ -1,0 +1,46 @@
+Learning Daily (17/04/25)
+
+*Topic Of The Day*s
+
+# Introduction to Streams ( What is Java Stream API? )
+
+video : https://www.youtube.com/watch?v=t1-YZ6bF-g0
+docs : https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html
+
+**Problem Of The Day (Easy, Medium, Hard)**
+
+*Easy : Given a list of integers, count how many numbers are even using Stream API. 
+ 
+ Example : 	Input: [1, 2, 3, 4, 5, 6]  
+		Output: 3
+ 
+ Test Case : 	assert countEvenNumbers(List.of(1, 2, 3, 4, 5, 6)) == 3;
+		assert countEvenNumbers(List.of(7, 9, 11, 13)) == 0;
+		assert countEvenNumbers(List.of(2, 4, 6, 8, 10)) == 5;
+
+*Medium : Given a list of names, return only names that start with the letter "A".
+
+ Example : 	Input: ["Alice", "Bob", "Anna", "Charlie"]  
+		Output: ["Alice", "Anna"]
+
+ Test Case : 	assert filterNames(List.of("Alice", "Bob", "Anna", "Charlie")).equals(List.of("Alice", "Anna"));
+		assert filterNames(List.of("John", "Doe", "Mark")).equals(List.of());
+		assert filterNames(List.of("Adam", "Alex", "Amy", "Aria")).equals(List.of("Adam", "Alex", "Amy", "Aria"));
+
+*Hard : Find the maximum number from a list using Stream API.
+
+ Example : 	Input: [10, 5, 20, 8]  
+		Output: 20
+
+ Test Case : 	assert findMax(List.of(10, 5, 20, 8)).orElse(-1) == 20;
+		assert findMax(List.of(-5, -1, -3)).orElse(-1) == -1;
+		assert findMax(List.of()).orElse(-1) == -1;
+
+ *Bonus : Find the second largest number from a list using Stream API.
+
+ Example : 	Input: [10, 5, 20, 8]  
+		Output: 10
+
+ Test Cases : 	assert findSecondLargest(List.of(10, 5, 20, 8)).orElse(-1) == 10;
+		assert findSecondLargest(List.of(1, 1, 1)).orElse(-1) == -1;
+		assert findSecondLargest(List.of(50, 30, 40, 20)).orElse(-1) == 40;
